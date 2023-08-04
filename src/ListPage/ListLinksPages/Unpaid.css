@@ -1,0 +1,109 @@
+body {
+  overflow-x: hidden;
+}
+
+.unpaid-list-container {
+  margin-top: 3rem;
+  height: calc(100vh - 3rem);
+  padding: 3rem 5rem;
+  position: relative;
+}
+
+.unpaid-list {
+  height: 100%;
+  width: 100%;
+  background-color: #36454f;
+  border-radius: 1rem;
+  padding: 2rem 1.5rem 1.5rem 1.5rem;
+}
+
+.lists-container {
+  margin-top: 2.5rem;
+  overflow-y: scroll;
+  height: calc(100% - 3rem);
+}
+
+.indicator {
+  position: absolute;
+  width: 15rem;
+  height: 2.5rem;
+  left: 50%;
+  top: 3.5rem;
+  padding: 0.4rem ;
+  border-radius: calc(2.5rem/2);
+  transform: translate(-50%, -2rem);
+  background-color: rgb(71, 83, 96);
+  box-shadow: 0px 2px 4px 1px #0000009f;
+  color: white;
+  text-indent: 0;
+}
+
+.--contract {
+  width: 18rem;
+}
+
+.headings,
+.lists {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  /* background-color: #36454f; */
+}
+
+.headings {
+  position: absolute;
+  width: calc(100vw - 13rem);
+}
+
+.headings p,
+.lists p {
+  flex: calc(100% / 5);
+  text-align: center;
+}
+
+.lists button {
+  display: inline;
+}
+
+.lists {
+  margin-bottom: 1rem;
+}
+
+.unpaid-list p {
+  color: white;
+}
+
+.person-info p {
+  color: black;
+}
+
+@media (max-width: 1080px) {
+  .unpaid-list-container {
+    padding: 3rem 0.5rem;
+    width: 100%;
+  }
+
+  .unpaid-list {
+  width: 100%;
+  }
+
+  .lists-container {
+    margin-top: 1.5rem;
+  }
+
+  .lists {
+    flex-direction: column;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.374);
+    padding-bottom: 1rem;
+  }
+
+  .lists p {
+    width: 100%;
+    text-align: start;
+  }
+
+  .headings {
+    position: absolute;
+    width: calc(80rem - 5rem);
+  }
+}

@@ -1,0 +1,33 @@
+/* 
+lightest - #dec0f1
+medium - #b79ced
+dark accent - #957fef
+*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Poppins", sans-serif;
+  overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+  background-color: #485b6800;
+  width: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #f7f7f75b;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow-y: scroll;
+}
+
+button {
+  cursor: pointer;
+}
